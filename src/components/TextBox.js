@@ -25,7 +25,7 @@ export default function TextBox() {
   return (
     <div id='code-editor'>
       <Card className='cardStyle'>
-        <Card.Header style={{ color: 'white', backgroundColor: '#222324' }}>
+        <Card.Header className='cardHeader' style={{ color: 'white', backgroundColor: '#222324' }}>
           <b>Code Editor</b>
         </Card.Header>
         <Card.Body>
