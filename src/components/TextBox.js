@@ -4,6 +4,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import { toPng, toSvg } from 'html-to-image';
 import download from 'downloadjs';
+import '../App.css';
 
 export default function TextBox() {
   const handleDownloadPng = () => {
@@ -23,34 +24,19 @@ export default function TextBox() {
   const [code, setCode] = React.useState(`function add(a, b) {\n return a + b;\n}`);
   return (
     <div id='code-editor'>
-      <Card
-        style={{
-          width: '600px',
-          height: '600px',
-          marginRight: 'auto',
-          marginLeft: 'auto',
-          marginTop: '300px',
-          backgroundColor: 'black',
-        }}>
+      <Card className='cardStyle'>
         <Card.Header style={{ color: 'white', backgroundColor: '#222324' }}>
-          Code Editor
+          <b>Code Editor</b>
         </Card.Header>
         <Card.Body>
           <div data-color-mode='dark'>
             <CodeEditor
+              className='codeEditor'
               value={code}
               language='js'
               placeholder='Please enter JS code'
               onChange={(evn) => setCode(evn.target.value)}
               padding={15}
-              style={{
-                fontSize: 12,
-                backgroundColor: 'black',
-                fontFamily:
-                  "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
-                width: 'auto',
-                height: 'auto',
-              }}
             />
           </div>
         </Card.Body>

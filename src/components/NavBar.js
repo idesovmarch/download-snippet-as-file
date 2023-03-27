@@ -1,19 +1,18 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 
 export default function NavBar() {
   return (
     <div>
-      <Navbar bg='dark' style={{backgroundColor: '#090b46'}}>
-        <Container>
+      <Navbar className="navStyle"style={{backgroundColor: '#161b22'}}>
           <Navbar.Brand href='#home'>
+          <span className="title">
             <i
-              class='fa-solid fa-lg fa-file-image'
-              style={{ color: '#ffffff', marginRight: '50px;' }}></i>{' '}
-            <span className="title">CodeSnippet.png</span>
+              className='fa-solid fa-lg fa-file-arrow-down fa-gradient'
+              id="imageIcon"
+             ></i>{' '}
+           CodeSnippet</span>
           </Navbar.Brand>
-        </Container>
       </Navbar>
     </div>
   );

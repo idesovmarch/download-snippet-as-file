@@ -1,7 +1,8 @@
 {
+  "homepage": "https://idesovmarch.github.io/download-snippet-as-file",
   "name": "copy-snippet",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -9,6 +10,7 @@
     "@uiw/react-textarea-code-editor": "^2.1.1",
     "bootstrap": "^5.2.3",
     "downloadjs": "^1.4.7",
+    "hover.css": "^2.3.2",
     "html-to-image": "^1.11.11",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.2",
@@ -21,7 +23,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -40,5 +44,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
