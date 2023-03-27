@@ -44,7 +44,7 @@ body {
 
 .cardStyle {
   max-width: 600px;
-  max-height: 600px !important;
+  max-height: 600px;
   min-height: 300px;
   margin-right: auto;
   margin-left: auto;
