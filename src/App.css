@@ -57,7 +57,6 @@ body {
 .cardHeader {
   background-color: #161b22 !important;
   color: white;
-  
 }
 .footerBar {
   font-size: 8px;
@@ -102,4 +101,10 @@ body {
   margin-left: auto;
   margin-top: 100px;
   text-align: center;
+}
+
+.creditLink {
+  color: white;
+  text-decoration: none;
+  margin-left: 50px;
 }
