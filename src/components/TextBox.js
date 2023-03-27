@@ -9,7 +9,7 @@ import '../App.css';
 export default function TextBox() {
   const handleDownloadPng = () => {
     toPng(document.getElementById('code-editor')).then(function (dataUrl) {
-      download(dataUrl, 'my-node.png');
+      download(dataUrl, 'my-img.png');
     });
   };
 
@@ -18,7 +18,7 @@ export default function TextBox() {
   }
   const handleDownloadSvg = () => {
     toSvg(document.getElementById('code-editor'), { filter }).then(function (dataUrl) {
-      download(dataUrl, 'my-node.svg');
+      download(dataUrl, 'my-img.svg');
     });
   };
   const [code, setCode] = React.useState(`function add(a, b) {\n return a + b;\n}`);
