@@ -1,7 +1,8 @@
 import './App.css';
-import TextBox from './components/TextBox.js';
+import TextEditor   from './components/TextEditor.js';
 import NavBar from './components/NavBar.js';
 import Card from 'react-bootstrap/Card';
+
 
 function App() {
   return (
@@ -17,10 +18,13 @@ function App() {
         </Card.Body>
       </Card>
 
-      <TextBox />
+      <TextEditor />
       <footer className='footerBar'>
         Brad Hammer "Idesovmarch" 2023{' '}
-        <a  className="creditLink" href='https://www.flaticon.com/free-icons/save' title='save icon favicon'>
+        <a
+          className='creditLink'
+          href='https://www.flaticon.com/free-icons/save'
+          title='save icon favicon'>
           Save icon used as favicon designed by designhub - Flaticon
         </a>
       </footer>
